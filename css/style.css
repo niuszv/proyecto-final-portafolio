@@ -16,3 +16,85 @@ body {
     justify-content: space-between;
     padding: 5rem 0;
 }
+
+.inicio h1 {
+    color: var(--color-principal);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+
+.inicio h1 p {
+    color: var(--color-body);
+}
+
+.enlaces ul {
+    list-style: none;
+}
+
+.enlaces ul li {
+    margin: 0.8rem 0;
+}
+
+.enlaces {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-menu);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    transition: var(--transicion);
+}
+
+.enlaces a::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background-color: var(--color-menu);
+    margin-right: 0.8rem;
+    transition: var(--transicion);
+}
+
+.enlaces a:hover,
+.enlaces a:active {
+    color: var(--color-principal);
+}
+
+.enlaces a:hover::before,
+.enlaces a:active::before {
+    width: 48px;
+    background-color: var(--color-principal);
+}
+
+.redes {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transicion);
+}
+
+.redes a:hover {
+    transform: translateY(-2px);
+}
+
+.redes img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(0.7);
+    transition: var(--transicion);
+}
+
+.redes a:hover img {
+    filter: brightness(0) invert(1);
+}
