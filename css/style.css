@@ -1,20 +1,20 @@
 body {
     display: flex;
-    max-width: var(--max-width);
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 2rem;
 
 }
 
 .sidebar {
-    width: 42%;
+    width: 50%;
     height: 100vh;
     position: sticky;
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5rem 0;
+    padding: 5rem 3.5rem 5rem 0;
 }
 
 .inicio h1 {
