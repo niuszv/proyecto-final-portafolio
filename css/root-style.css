@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,8 +10,8 @@
     --color-card-hover: #FFFFFF12;
 
     --color-principal: #adb0b3d5;
-    --color-body: #7c787870;
-    --color-menu: #cec2c2aa;
+    --color-body: #94a3b8;
+    --color-menu: #64748b;
 
     --enlace: #38bdf8;
     --lineas: #ffffff14;
@@ -20,7 +20,7 @@
     --max-width: 1000px;
     --radius: 8px;
 
-    --transicion: all 0.25s ease-in-out
+    --transicion: all 0.25s ease-in-out;
 }
 
 html {
@@ -30,11 +30,11 @@ html {
 body {
     background-color: var(--color-main);
     color: var(--color-body);
-    font-family: var(--color-main);
+    font-family: var(--font-main);
     line-height: 1.6;
 }
 
 ::selection {
-    background-color: var(--color-main);
-    color: var(--enlace);
+    background-color: var(--enlace);
+    color: var(--color-principal);
 }
