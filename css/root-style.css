@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-main: #0f172a;          
+    --color-card: #121212; 
+    --color-card-hover: #123;
+
+    --color-principal: #f8fafc;
+    --color-body: #94a3b8;
+    --color-menu: #64748b;
+
+    --enlace: #38bdf8;
+    --lineas: #cbc7c7;
+
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --max-width: 1000px;
+    --radius: 8px;
+
+    --transicion: all 0.25s ease-in-out
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-main);
+    color: var(--color-body);
+    font-family: var(--color-main);
+    line-height: 1.6;
+}
+
+::selection {
+    background-color: var(--color-main);
+    color: var(--enlace);
+}
