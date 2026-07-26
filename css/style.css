@@ -131,3 +131,10 @@ body {
 .card a:hover {
     text-decoration: underline;
 }
+
+.boton {
+    background-color: rgb(31, 77, 131);
+    color: aliceblue;
+    border: none;
+    padding: 8px 16px;
+}
