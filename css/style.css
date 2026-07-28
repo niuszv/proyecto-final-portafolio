@@ -6,6 +6,21 @@ body {
 
 }
 
+@media (min-width:768) {
+    body {
+        flex-direction: row;
+        padding: 0 2rem;
+    }
+
+    .sidebar {
+        width: 50%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        padding: 5rem 3.5rem 5rem 0;
+    }
+}
+
 .sidebar {
     width: 50%;
     height: 100vh;
