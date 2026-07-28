@@ -1,35 +1,24 @@
 body {
     display: flex;
+    flex-direction: column;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 2rem;
-
-}
-
-@media (min-width:768) {
-    body {
-        flex-direction: row;
-        padding: 0 2rem;
-    }
-
-    .sidebar {
-        width: 50%;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-        padding: 5rem 3.5rem 5rem 0;
-    }
+    padding: 2rem;
 }
 
 .sidebar {
-    width: 50%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
+    width: 100%;
+    height: auto;
+    position: static;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5rem 3.5rem 5rem 0;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+,.content {
+    width: 100%;
 }
 
 .inicio h1 {
@@ -156,4 +145,24 @@ body {
 }
 .boton:hover {
     background-color: rgb(53, 100, 155);
+}
+
+@media (min-width:768px) {
+    body {
+        flex-direction: row;
+        padding: 0 2rem;
+    }
+
+    .sidebar {
+        width: 50%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        padding: 5rem 3.5rem 5rem 0;
+    }
+
+    .content {
+        width: 50%;
+        padding-top: 5rem;
+    }
 }
