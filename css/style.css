@@ -147,6 +147,17 @@ body {
     background-color: rgb(53, 100, 155);
 }
 
+.boton-tema {
+    background-color: rgb(31, 77, 131);
+    color: aliceblue;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.boton-tema:hover {
+    background-color: rgb(53, 100, 155);
+}
+
 @media (min-width:768px) {
     body {
         flex-direction: row;

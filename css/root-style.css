@@ -38,3 +38,13 @@ body {
     background-color: var(--enlace);
     color: var(--color-principal);
 }
+
+body.modo-claro {
+    --color-main: #f8fafc;
+    --color-principal: #0f172a;
+    --color-body: #334155;
+    --color-menu: #475569;
+    --color-card: #0000000d;
+    --color-card-hover: #0000001a;
+    --lineas: #0000001a;
+}
